@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kioskmonitor"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+        <RelativeLayout
+            android:id="@+id/dateContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/lblBranchName"
+                android:layout_marginTop="1600dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="450dp"
+                android:text="Branch Name"
+                android:textColor="@color/darkGray"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="STATUS : "-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="1700dp"
+                android:layout_marginLeft="900dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/lblStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/main_green_color"
+                    android:text="ONLINE"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <ImageView
+                    android:onClick="BackToLogin"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="1000dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/settings" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:id="@+id/layoutBookHere"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/touchtostart"
+        android:background="@drawable/touchthescreentostart"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOK HERE"
+                android:textSize="60dp"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/touchtostart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap the screen to start"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+            z
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For assistance you may approach any of our staff."
+                android:textColor="@color/darkGray"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copyright@2019 Aeon Fantasy Group Philippines, all rights reserved."
+                android:textColor="@color/darkGray"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by ALLCARD TECHNOLOGIES"
+                android:textColor="@color/darkGray"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

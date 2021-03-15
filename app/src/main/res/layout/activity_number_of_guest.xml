@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:onClick="HideKeyboard"
+    >
+
+
+    <ImageView
+        android:id="@+id/step4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/numberofguests">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentTop="true"
+            android:onClick="HideKeyboard"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lblTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Please enter the number of child and guardian"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:onClick="HideKeyboard"
+            android:paddingTop="10dp">
+
+            <TextView
+
+                android:id="@+id/lblSmall"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:text="CHILD(1 TO 17 YEARS OLD)"
+                android:textColor="@color/darkgreen"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnChildDecrement"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:background="@drawable/minus"
+                    android:gravity="center"
+                    android:onClick="btnChildDecrement"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextwhite"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="60dp" />
+
+                <Button
+                    android:id="@+id/btnChildIncrement"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/plus"
+                    android:gravity="center"
+                    android:onClick="btnChildIncrement" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:text="ADULT (18 YEARS OLD &amp; ABOVE)"
+                android:textColor="@color/darkgreen"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnAdultDecrement"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:background="@drawable/minus"
+                    android:gravity="center"
+                    android:onClick="btnChildDecrement"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtAdult"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextwhite"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="60dp" />
+
+                <Button
+                    android:id="@+id/btnAdultIncrement"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:background="@drawable/plus"
+                    android:gravity="center"
+                    android:onClick="btnChildIncrement"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="586dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:lines="3"
+                android:text="Children above 12 years old will be allowed to play \ninside the play area if they are together with their \nyounger siblings, relatives or friends."
+                android:textColor="@color/darkbrown"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:onClick="HideKeyboard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="BACK"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_gray"
+                    android:textColor="@color/grayyellow"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:textSize="70sp"/>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_rounded_green"
+                    android:text="NEXT"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grayyellow"
+                    android:textStyle="bold"
+                    android:textSize="70sp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fooderkiosk"
+                >
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

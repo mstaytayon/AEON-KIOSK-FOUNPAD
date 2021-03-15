@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="HideKeyboard"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/step5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customerinformation">
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentTop="true"
+            android:onClick="HideKeyboard"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:lines="3"
+                android:text="INPUT OR SCAN \n  THE LOYALTY CARD \n NUMBER"
+                android:textAlignment="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/darkgreen"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:onClick="HideKeyboard"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/txtCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextwhite"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="16"
+                android:padding="10dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:onClick="HideKeyboard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="BACK"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_gray"
+                    android:textColor="@color/grayyellow"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:textSize="70sp"/>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_rounded_green"
+                    android:text="NEXT"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grayyellow"
+                    android:textStyle="bold"
+                    android:textSize="70sp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fooderkiosk"
+                >
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

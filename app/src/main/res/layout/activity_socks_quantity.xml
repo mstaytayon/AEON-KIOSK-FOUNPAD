@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:onClick="HideKeyboard"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/step6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/socksquantity">
+    </ImageView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/socksquantityscv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:fadingEdge="horizontal"
+            android:requiresFadingEdge="vertical" >
+
+
+            <LinearLayout
+                android:layout_below="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:onClick="HideKeyboard"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/lblTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Socks  are required inside the play area, if all guests already have their own socks, please click NEXT"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="50dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_below="@+id/step4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="40dp"
+                    android:text="Choose size and quantity (PHP 30 / each)"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/darkbrown"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblSmall"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="EXTRA SMALL"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btnExtraSmallDecrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:onClick="btnChildDecrement"
+                        android:text="-"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeXS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextwhite"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="60dp" />
+                    />
+
+                    <Button
+                        android:id="@+id/btnExtraSmallIncrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:onClick="btnChildIncrement" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="SMALL"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btnSmallDecrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:onClick="btnChildDecrement"
+                        android:text="-"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:text="0"
+                        android:textSize="60dp"
+                        android:background="@drawable/edittextwhite"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btnSmallIncrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:onClick="btnChildIncrement" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="MEDIUM"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btnMediumDecrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:onClick="btnChildDecrement"
+                        android:text="-"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:text="0"
+                        android:textSize="60dp"
+                        android:background="@drawable/edittextwhite"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btnMediumIncrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:onClick="btnChildIncrement" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="LARGE"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btnLargeDecrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:onClick="btnChildDecrement"
+                        android:text="-"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:text="0"
+                        android:textSize="60dp"
+                        android:background="@drawable/edittextwhite"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />s
+
+                    <Button
+                        android:id="@+id/btnLargeIncrement"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:onClick="btnChildIncrement" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:onClick="HideKeyboard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="BACK"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_gray"
+                    android:textColor="@color/grayyellow"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:textSize="70sp"/>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_rounded_green"
+                    android:text="NEXT"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grayyellow"
+                    android:textStyle="bold"
+                    android:textSize="70sp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fooderkiosk"
+                >
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

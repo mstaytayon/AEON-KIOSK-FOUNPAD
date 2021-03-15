@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <ImageView
+        android:id="@+id/step4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/step2">
+    </ImageView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="10dp"
+        android:requiresFadingEdge="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/chracter"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/pinkcharacter">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/lblTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/chracter"
+                    android:textAlignment="center"
+                    android:text="Please enter the name of child"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/gray"
+                    android:textSize="60dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearListOfChildren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="50dp"
+                android:layout_gravity="center">
+            </LinearLayout>
+
+            <LinearLayout
+                style="?android:buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <Button
+                    android:id="@+id/btnBack"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="BACK"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:textSize="60dp"/>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:background="@color/charpink"
+                    android:text="NEXT"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="60dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

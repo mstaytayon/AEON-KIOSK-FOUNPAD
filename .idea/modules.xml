@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FOUNPAD.iml" filepath="$PROJECT_DIR$/FOUNPAD.iml" group="FOUNPAD" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FOUNPAD/app" />
+      <module fileurl="file://$PROJECT_DIR$/ptapi-release/ptapi-release.iml" filepath="$PROJECT_DIR$/ptapi-release/ptapi-release.iml" group="FOUNPAD/ptapi-release" />
+    </modules>
+  </component>
+</project>

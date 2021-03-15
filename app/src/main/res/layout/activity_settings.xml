@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:onClick="HideKeyboard"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="SERVER SET-UP"
+        android:background="@color/brown"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/grayyellow"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:weightSum="1.0"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="IP address/domain"
+                android:textColor="@color/brown"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:text="Port"
+                android:textColor="@color/brown"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="1.0">
+
+            <EditText
+                android:id="@+id/txtIPAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/edittextwhite"
+                android:hint="IP Address/domain name"
+                android:inputType="textUri"
+                android:textSize="30dp"
+                android:lines="1"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/txtPort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/edittextwhite"
+                android:hint="Port"
+                android:textSize="30dp"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch code"
+            android:textColor="@color/brown"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/txtBranchCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextwhite"
+            android:hint="Branch Code"
+            android:textSize="30dp"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="15"
+            android:padding="10dp" />
+
+
+        <LinearLayout
+            style="?android:buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+            <Button
+                android:id="@+id/btnBack"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="BACK"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_gray"
+                android:layout_margin="1dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:textSize="60dp"/>
+
+            <Button
+                android:id="@+id/btnContinue"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/button_rounded_green"
+                android:text="SAVE"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="60dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

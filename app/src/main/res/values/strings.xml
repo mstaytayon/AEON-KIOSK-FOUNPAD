@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Kidzooona</string>
+
+    <string name="registration">
+
+        <b>Anti-Privacy Agreement</b>\n\n
+
+Acknowledgement of the following terms and use of this application constitute an agreement between you, the client, and Aeon Fantasy Group Phil. Inc.
+This application contains acquisition of images and data through several different methods.
+All content contained on this application is the sole property of Aeon Fantasy Group Phil. Inc. Licenses allow the (one) client to access the property for an indefinite period of time and under the following terms.\n\n
+
+        <b>The client acknowledges and agrees to the following:</b>\n\n
+
+1. The images on this application are specific to the customer’s account, identifying him or her as the owner of the image. This allows Aeon Fantasy Group Phil. Inc. to keep track of the record for security purposes.\n\n
+2. The content contained within this application is not to be redistributed in any way and is for the client’s own person use.\n\n
+3. The client will not copy text or capture images from the application.\n\n
+4. The client will not share or redistribute content contained on this application in any way, either online or in physical form.\n\n
+5. The client will not resell content contained on this application in any way, either online or in physical form.\n\n
+6. Should the client violate these acknowledgements, Aeon Fantasy Group Phil. Inc. will immediately terminate the client’s account and pursue legal action against the client for damages incurred from the unauthorized distribution of Aeon Fantasy Group Phil. Inc. intellectual property.\n\n\n
+
+        <b>Additional Terms of Service and Privacy</b>\n\n
+
+Aeon Fantasy Group Phil. Inc. respects the privacy of its clients and will not share or distribute any client information, including but not limited to name, address, telephone number, email, images, to 3rd parties. Aeon Fantasy Group Phil. Inc. will not collect information from the client without the client’s consent.
+
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
