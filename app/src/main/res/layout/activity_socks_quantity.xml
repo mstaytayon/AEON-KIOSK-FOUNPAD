@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="HideKeyboard"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/step4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/socks">
+    </ImageView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/header"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Socks  are required inside the play area, if all guests already have their own socks, please click NEXT."
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/darkgreen"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+           <TextView
+                android:layout_below="@+id/step4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="Choose size and quantity (PHP 30 / each)"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/darkbrown"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="-50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150px"
+                        android:gravity="center"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="-30px"
+                        android:onClick="btnExtraSmallDecrement"
+                        android:text="EXTRA SMALL"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkgreen"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:gravity="center"
+                        android:layout_marginTop="-30px"
+                        android:layout_marginLeft="70dp"
+                        android:onClick="btnExtraSmallDecrement"
+                        android:text="SMALL"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkgreen"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150px"
+                        android:gravity="center"
+                        android:layout_marginTop="-30px"
+                        android:onClick="btnExtraSmallDecrement"
+                        android:text="MEDIUM"
+                        android:layout_marginLeft="70dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkgreen" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150px"
+                        android:gravity="center"
+                        android:layout_marginTop="-30px"
+                        android:onClick="btnExtraSmallDecrement"
+                        android:text="LARGE"
+                        android:layout_marginLeft="70dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkgreen" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="-10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/btnExtraSmallDecrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                         android:layout_marginTop="-3dp"
+                        android:onClick="btnExtraSmallDecrement"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeXS"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:layout_weight="3"
+                        android:background="@drawable/edittextwhite"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="25dp" />
+
+
+                    <Button
+                        android:id="@+id/btnExtraSmallIncrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:layout_marginTop="-3dp"
+                        android:onClick="btnExtraSmallIncrement"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <Button
+                        android:id="@+id/btnSmallDecrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:layout_marginTop="-3dp"
+                        android:onClick="btnSmallDecrement"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeSmall"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:layout_weight="3"
+                        android:background="@drawable/edittextwhite"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="25dp" />
+
+
+                    <Button
+                        android:id="@+id/btnSmallIncrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:layout_marginTop="-3dp"
+                        android:onClick="btnSmallIncrement"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <Button
+                        android:id="@+id/btnMediumDecrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:layout_marginTop="-3dp"
+                        android:onClick="btnSmallDecrement"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeMedium"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:layout_weight="3"
+                        android:background="@drawable/edittextwhite"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="25dp" />
+
+
+                    <Button
+                        android:id="@+id/btnMediumIncrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:layout_marginTop="-3dp"
+                        android:onClick="btnSmallIncrement"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <Button
+                        android:id="@+id/btnLargeDecrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:layout_marginTop="-3dp"
+                        android:onClick="btnSmallDecrement"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/txtSizeLarge"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+
+                        android:layout_weight="3"
+                        android:background="@drawable/edittextwhite"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="25dp" />
+
+
+                    <Button
+                        android:id="@+id/btnLargeIncrement"
+                        android:layout_width="120px"
+                        android:layout_height="150px"
+                        android:background="@drawable/plus"
+                        android:gravity="center"
+                        android:layout_marginTop="-3dp"
+                        android:onClick="btnSmallIncrement"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:onClick="HideKeyboard"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="250dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded_gray"
+                    android:padding="10dp"
+                    android:text="BACK"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/grayyellow"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded_green"
+                    android:padding="10dp"
+                    android:text="NEXT"
+                    android:textColor="@color/grayyellow"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:background="@drawable/footer"></LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

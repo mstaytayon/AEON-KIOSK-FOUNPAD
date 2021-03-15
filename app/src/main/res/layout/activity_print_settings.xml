@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:onClick="HideKeyboard"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="40dp"
+        android:gravity="center"
+
+        android:text="Printing and user settings"
+        android:background="@color/brown"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/grayyellow"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lblusers"
+        android:layout_below="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER NAME"
+            android:textSize="20dp"
+            android:textColor="@color/brown"
+            android:padding="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:layout_weight="0.5">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_weight="0.5">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/user"
+        android:layout_below="@+id/lblusers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0">
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/edittextwhite"
+            android:hint="Enter Username"
+            android:inputType="textUri"
+            android:lines="1"
+            android:textSize="30dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/edittextwhite"
+            android:hint="Enter Password"
+            android:textSize="30dp"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="10dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            >
+            <RadioButton android:id="@+id/radioAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="PRINT ALL DETAILS"
+
+
+                android:textColor="@color/brown"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+            <RadioButton android:id="@+id/radioQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:textColor="@color/brown"
+                android:text="PRINT AMOUNT AND QR CODE ONLY"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            style="?android:buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+            <Button
+                android:id="@+id/btnBack"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="BACK"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_gray"
+                android:layout_margin="1dp"
+                android:textColor="@color/white"
+
+                android:textStyle="bold"
+                android:textSize="60dp"/>
+
+            <Button
+                android:id="@+id/btnContinue"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/button_rounded_green"
+                android:text="SAVE"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="60dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

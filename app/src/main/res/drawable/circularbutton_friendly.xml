@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false"> <!-- focused -->
+        <shape android:padding="10dp" android:shape="oval">
+            <solid android:color="@color/emerald" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true"> <!-- focused -->
+        <shape android:padding="10dp" android:shape="oval">
+            <solid android:color="@color/darkGray" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true"> <!-- focused -->
+        <shape android:padding="10dp" android:shape="oval">
+            <solid android:color="@color/emerald" />
+        </shape>
+    </item>
+
+    <item> <!-- focused -->
+        <shape android:padding="10dp" android:shape="oval">
+            <solid android:color="@color/emerald" />
+        </shape>
+    </item>
+</selector>

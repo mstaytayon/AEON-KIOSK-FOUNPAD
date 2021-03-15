@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="HideKeyboard"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/step4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/numberofguest">
+    </ImageView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="200px"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Please enter the name of extra guardian"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/darkgreen"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtGuardian"
+                android:layout_width="1500px"
+                android:layout_height="150px"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextwhite"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:maxLength="16"
+                android:padding="10dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="60dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:onClick="HideKeyboard"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="250dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded_gray"
+                    android:padding="10dp"
+                    android:text="BACK"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/grayyellow"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded_green"
+                    android:padding="10dp"
+                    android:text="NEXT"
+                    android:textColor="@color/grayyellow"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:background="@drawable/footer"></LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

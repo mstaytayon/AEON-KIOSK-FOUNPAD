@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="borderThickness">1dp</dimen>
+    <dimen name="separatorThickness">2dp</dimen>
+    <dimen name="spacer">5dp</dimen>
+    <dimen name="menuHeight">40dp</dimen>
+    <dimen name="txtSize">30dp</dimen>
+    <dimen name="marginTop">30dp</dimen>
+</resources>
